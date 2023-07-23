@@ -520,6 +520,9 @@ button {
 }
 
 .member-item__img-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 28px;
     border-radius: 6px;
     background-color: #eaf6ff;
