@@ -26,6 +26,14 @@ a {
     text-decoration: none;
 }
 
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 .btn {
     /* --height: 60px -> dùng để khi sữa chiều cao thì cái line-height nó ăn thể để cho cái chữ nó nằm giữa */
     --height: 60px;
@@ -146,6 +154,7 @@ a {
 .logo__brand {
     /* display: block -> để cho 2 chữ shine với smile nó nằm trên 2 hàng */
     display: block;
+    font-family: "Sora", sans-serif;
     font-size: 1.8em;
     font-weight: 400;
     color: #fff;
@@ -725,4 +734,122 @@ a {
     font-size: 1.6rem;
     max-width: 617px;
     margin: 18px auto 38px;
+}
+
+/*============= Footer ==============*/
+.footer {
+    padding-top: 100px;
+    background-color: var(--header-bg);
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #a9b3bb;
+}
+
+.footer__heading {
+    margin-bottom: 22px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #fff;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    white-space: nowrap;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 28px;
+}
+
+.footer__social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #2e80ce;
+    background-color: #ffffff;
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+    color: #ffffff;
+    background-color: #2e80ce;
+}
+
+.footer-form {
+    display: flex;
+    column-gap: 12px;
+    margin-top: 10px;
+}
+
+.footer-form__input {
+    width: 212px;
+    height: 46px;
+    padding: 0 10px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    color: #fff;
+    background-color: transparent;
+}
+
+.footer-form__input::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.footer-form__submit {
+    --height: 46px;
+
+    min-width: 108px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.footer__copyright {
+    border-top: 1px solid #406181;
+    padding: 28px 0 42px;
+}
+
+.footer__copyright-text {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #aab3ba;
 }
